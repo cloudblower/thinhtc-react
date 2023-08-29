@@ -5,7 +5,7 @@ import BestSeller from '../components/BestSeller';
 import Banner2 from '../components/Banner2';
 import OurProducts from '../components/OurProducts';
 import Reviews from '../components/Reviews';
-import SignUp from '../components/Banner1';
+import SignUp from '../components/SignUp';
 
 const Landing = () => {
   return (
