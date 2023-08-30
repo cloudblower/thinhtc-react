@@ -2,7 +2,6 @@ import React from 'react';
 import { ProductData, CategoryData } from '../../data/ourproducts';
 import CategoryItem from './CategoryItem';
 import ProductItem from './ProductItem';
-import './styles.module.css';
 
 const OurProducts = () => {
   return (

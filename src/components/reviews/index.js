@@ -1,7 +1,6 @@
 import React from 'react';
 import ReviewSlide from './ReviewSlide';
 import { SlideData } from '../../data/reviews';
-import './styles.module.css';
 
 const Reviews = () => {
   return (

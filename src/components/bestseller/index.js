@@ -1,7 +1,6 @@
 import React from 'react';
 import SlideItem from './SellerSlide';
 import { sellerData } from '../../data/bestseller';
-import './styles.module.css';
 
 const BestSeller = () => {
   return (

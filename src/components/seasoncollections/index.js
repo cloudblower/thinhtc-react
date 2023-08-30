@@ -1,7 +1,6 @@
 import React from 'react';
 import CollectionItem from './CollectionItem';
 import { collectionData } from '../../data/seasoncollections';
-import './styles.module.css';
 
 const SeasonCollections = () => {
   return (
