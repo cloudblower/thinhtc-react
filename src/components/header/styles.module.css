@@ -1,0 +1,85 @@
+/* HEADER */
+.ly_header {
+  background-color: #fff;
+  /* color: #fff;
+  text-align: center;
+  padding: 20px; */
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  height: 106px;
+}
+
+.bl_navBar {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin: 42px 0px 47px 0;
+  list-style: none;
+}
+.bl_navBar_navItem {
+  cursor: pointer;
+  position: relative;
+}
+
+.bl_navBar_navItem::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background: #000;
+  transition: width 0.3s ease-in-out;
+  bottom: -2px;
+}
+
+.bl_navBar_navItem.active::after {
+  width: 100%;
+}
+
+.bl_headerLogo {
+  width: 95px;
+  height: 40px;
+  /* transform: translate(-139%, 5%); */
+  margin: 35px 330px 31px 192px;
+}
+
+.bl_toolBar {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 26px;
+  margin: 33px 0 38px 0;
+}
+
+.bl_toolBar_searchBox {
+  position: relative;
+  width: 155px;
+  height: 35px;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.35);
+}
+
+.bl_toolBar_searchBox_searchText {
+  all: initial;
+  position: absolute;
+  left: 19px;
+  top: 9px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: var(--primary-font);
+  width: 100px;
+}
+
+.bl_toolBar_searchBox_searchIcon {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 123px;
+  top: 6px;
+}
+
+.bl_toolBar_cartIcon {
+  width: 18px;
+  height: 18px;
+}

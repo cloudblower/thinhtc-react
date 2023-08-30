@@ -1,20 +1,30 @@
 import React from 'react';
+import { ProductData, CategoryData } from '../../data/ourproducts';
+import CategoryItem from './CategoryItem';
+import ProductItem from './ProductItem';
+import './styles.module.css';
 
 const OurProducts = () => {
   return (
     <section className='bl_ourProducts'>
       <h1 className='hp_primaryHeading'>Our Products</h1>
       <div className='bl_ourProducts_categories hp_fz-32_fw-500'>
-        <h2 className='bl_ourProducts_category_item active'>Top</h2>
+        {CategoryData.map((category, i) => {
+          return <CategoryItem key={i} category={category} index={i} />;
+        })}
+        {/* <h2 className='bl_ourProducts_category_item active'>Top</h2>
         <h2 className='bl_ourProducts_category_item'>Bottom</h2>
         <h2 className='bl_ourProducts_category_item'>Dress</h2>
         <h2 className='bl_ourProducts_category_item'>Set</h2>
         <h2 className='bl_ourProducts_category_item'>Knit</h2>
-        <h2 className='bl_ourProducts_category_item'>Outer</h2>
+        <h2 className='bl_ourProducts_category_item'>Outer</h2> */}
       </div>
       <div className='bl_ourProducts_items'>
         <div className='bl_ourProducts_items_wrap'>
-          <div>
+          {ProductData.map((product, i) => {
+            return <ProductItem key={i} product={product} />;
+          })}
+          {/* <div>
             <img src='assets/images/our-product1.png' alt='' />
             <h3 className='hp_fz-16_fw-400'>Eto V Neck Yellow</h3>
             <h4 className='hp_fz-14_fw-400'>Rp. 129.000</h4>
@@ -43,7 +53,7 @@ const OurProducts = () => {
             <img src='assets/images/our-product6.png' alt='' />
             <h3 className='hp_fz-16_fw-400'>Snap Pure Blouse</h3>
             <h4 className='hp_fz-14_fw-400'>Rp. 225.000</h4>
-          </div>
+          </div> */}
         </div>
         <button className='bl_ourProducts_items_more'>
           <div className='hp_fz-20_fw-400'>SEE MORE</div>

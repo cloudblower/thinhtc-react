@@ -1,4 +1,7 @@
 import React from 'react';
+import SlideItem from './SellerSlide';
+import { sellerData } from '../../data/bestseller';
+import './styles.module.css';
 
 const BestSeller = () => {
   return (
@@ -10,7 +13,10 @@ const BestSeller = () => {
         data-ride='carousel'
       >
         <div className='carousel-inner'>
-          <div className='carousel-item active'>
+          {sellerData.map((slide, i) => {
+            return <SlideItem key={i} slide={slide} index={i} />;
+          })}
+          {/* <div className='carousel-item'>
             <div className='bl_bestSeller_item_wrap'>
               <div>
                 <img src='assets/images/bseller-item1.png' alt='' />
@@ -47,7 +53,7 @@ const BestSeller = () => {
                 <h4 className='hp_fz-14_fw-400'>Rp. 149.000</h4>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <a
           className='carousel-control-prev'
